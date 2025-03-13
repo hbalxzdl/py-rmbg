@@ -4,7 +4,8 @@ from torchvision import transforms
 from transformers import AutoModelForImageSegmentation
 import gradio as gr
 
-# 替换为模型存在路径
+# 运行必须要修改
+# 先下载模型，再修改模型路径
 path ='/Users/hbalxzdl/model/RMBG-2'
 # 加载模型（全局加载一次即可）
 model = AutoModelForImageSegmentation.from_pretrained(path, trust_remote_code=True)
